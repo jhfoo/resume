@@ -11,3 +11,8 @@
 
   - debug:
       var: cmd_output.stdout_lines
+
+  - name: copy files
+    ansible.builtin.copy:
+      src: .output/public/
+      dest: /usr/local/www/resume.kungfoo.info
