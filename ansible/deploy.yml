@@ -12,6 +12,9 @@
   - debug:
       var: cmd_output.stdout_lines
 
+  - name: remove existing dest dir
+    ansible.builtin.command: rm -rf /usr/local/www/resume.kungfoo.info
+
   - name: copy files
     ansible.builtin.copy:
       src: "{{playbook_dir}}/../.output/public/"
