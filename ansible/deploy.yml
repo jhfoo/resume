@@ -14,5 +14,5 @@
 
   - name: copy files
     ansible.builtin.copy:
-      src: ../../.output/public/
+      src: "{{playbook_dir}}/../.output/public/"
       dest: /usr/local/www/resume.kungfoo.info
