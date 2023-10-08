@@ -9,24 +9,13 @@
           <q-avatar>
             <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
           </q-avatar>
-          Title
+          {{SiteNavigation.title}}
         </q-toolbar-title>
 
       </q-toolbar>
     </q-header>
 
-    <q-drawer show-if-above v-model="leftDrawerOpen" side="left">
-      <q-img class="absolute-top" src="https://cdn.quasar.dev/img/material.png" style="height: 150px">
-        <div class="absolute-bottom bg-transparent">
-          <q-avatar size="56px" class="q-mb-sm">
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
-          </q-avatar>
-          <div class="text-weight-bold">Foo, Ji-Haw</div>
-          <div>foojihaw@</div>
-        </div>
-      </q-img>
-    </q-drawer>
-
+    <LeftDrawer/>
     <q-page-container>
       <NuxtLayout/>
     </q-page-container>
@@ -34,19 +23,15 @@
   </q-layout>
 </template>
 
-<script>
-import { ref } from 'vue'
+<script setup>
+import { useNavigation } from '@/stores/navigation'
 
-export default {
-  setup () {
-    const leftDrawerOpen = ref(false)
+const SiteNavigation = useNavigation()
 
-    return {
-      leftDrawerOpen,
-      toggleLeftDrawer () {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      },
-    }
-  }
+console.log(`Title: ${SiteNavigation.title}`)
+
+function toggleLeftDrawer() {
+  SiteNavigation.isShowDrawer = !SiteNavigation.isShowDrawer
+  console.log(`isShowDrawer: ${SiteNavigation.isShowDrawer}`)
 }
 </script>

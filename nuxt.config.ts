@@ -6,7 +6,8 @@ export default defineNuxtConfig({
     port: 8000,
   },
   modules: [
-    'nuxt-quasar-ui'
+    'nuxt-quasar-ui',
+    '@pinia/nuxt',
   ],
   quasar: { /* */ },
   
