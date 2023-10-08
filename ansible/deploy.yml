@@ -2,7 +2,7 @@
 - name: deploy resume.kungfoo.info to static server
   hosts: all
   gather_facts: no
-  resume_user: root
+  remote_user: root
 
   tasks:
   - name: test
