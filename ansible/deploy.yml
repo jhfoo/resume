@@ -1,0 +1,13 @@
+---
+- name: deploy resume.kungfoo.info to static server
+  hosts: all
+  gather_facts: no
+  resume_user: root
+
+  tasks:
+  - name: test
+    ansible.builtin.command: ls -al
+    register: cmd_output
+
+  - debug:
+      var: cmd_output.stdout_lines
