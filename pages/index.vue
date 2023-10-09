@@ -1,6 +1,52 @@
 <template>
-  This is the index page
+  <q-card class="MainCard row" bordered flat>
+      <div class="col-sm-8 col-xs-16">
+        <q-card-section class="">
+          <p>
+            This is the summation of my perspectives working in technology since graduation in 1998. 
+          </p>
+          <p>
+            I was fortunate to witness the .com bubble burst in 2000, the rise of mobile as dominant 
+            prevalent interface, prevalance of micro sensors and computer (IoT), and the emergence of 
+            cloud technologies. As with many others I picked up new skills, unlearnt some, and stayed 
+            curious about the next disruptive tech. 
+          </p>
+          <p>
+            My career is best described in 2 phases: Before and During (my time in the United States).
+          </p>
+          <p>
+            BEFORE coming to the States, I spent more than 10 years as a software developer in various 
+            startups. Researched 3G and IPv6 back in 1999 with Deutsche Telekom. Wrote learning portals 
+            serving over 200 schools with Perl. Built on-premise enterprise Cisco-integrated software 
+            used by the likes of BP, Barclays, and Sime Darby using C# and Javascript. The height of
+            my technical experience was the deployment of a massive data discovery tool for the homeland 
+            security; details of which cannot be elaborated.
+          </p>
+          <p>
+            DURING my time in the States, my career took a more focused path. I straddled between program
+            and product management in various companies within the developer excellence domain, helping 
+            developers navigate new technologies and processes brought on by cloud adoption; known also 
+            as Technology Transformation. My time in Amazon launching the Prime Same Day program is 
+            the most insightful both in hard (technology) and soft (critical thinking) skills.
+          </p>
+          <p>
+            If my skills are what you're looking for, let's talk.
+          </p>
+        </q-card-section>
+      </div>
+      <div class="col-4">
+        <q-img src="/images/bg-tech-cropped-gray.jpg"/>
+      </div>
+  </q-card>
 </template>
+
+<style scoped>
+.MainCard {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 
 <script setup>
 import { useNavigation } from '@/stores/navigation'
