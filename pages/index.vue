@@ -78,6 +78,6 @@ const KeyEvents = [{
 }, {
   company: 'Wayfair',
   year: '2023',
-  description: 'Lead a 200-engineering initiative improve cloud-native application infrastructure, increasing developer satisfaction and productivity while providing piercable abstractions.',
+  description: 'Lead a 200-engineering initiative to improve cloud-native application infrastructure, increasing developer satisfaction and productivity while providing piercable abstractions.',
 }]
 </script>

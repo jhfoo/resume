@@ -32,11 +32,11 @@
 import { useNavigation } from '@/stores/navigation'
 const SiteNavigation = useNavigation()
 
-const menu = [
-  {
+const menu = [{
+  name: 'Home',
+  }, {
     name: 'Experiences',
-  },
-  {
+  }, {
     name: 'Connect',
   },
 ]
