@@ -3,12 +3,9 @@
 
     <q-header class="bg-primary text-black bg-transparent">
       <q-toolbar>
-        <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
+        <q-btn class="lt-sm" dense flat round icon="menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
-          </q-avatar>
           {{SiteNavigation.title}}
         </q-toolbar-title>
 
