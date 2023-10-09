@@ -10,14 +10,11 @@
       </div>
     </q-img>
 
-    <q-list padding class="text-primary">
-      <q-item v-for="item in menu"
-        clickable
-        v-ripple
-        :active="link === 'outbox'"
+    <!-- :active="link === 'outbox'"
         @click="link = 'outbox'"
-        active-class="my-menu-link"
-      >
+        active-class="my-menu-link" -->
+    <q-list padding class="text-primary">
+      <q-item v-for="item in menu" clickable v-ripple>
         <q-item-section avatar>
           <q-icon name="send" />
         </q-item-section>
