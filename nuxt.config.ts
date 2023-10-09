@@ -8,7 +8,10 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-quasar-ui',
     '@pinia/nuxt',
+    '@nuxt/content',
   ],
   quasar: { /* */ },
-  
+  content: {
+    // ... options
+  },
 })

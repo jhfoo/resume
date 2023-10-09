@@ -64,20 +64,20 @@ SiteNavigation.title = 'Online Resume of Foo, Ji-Haw'
 console.log(`Title: ${SiteNavigation.title}`)
 
 const KeyEvents = [{
-  company: 'NexLabs',
-  year: '2012',
-  description: 'Designed and project-managed bespoke discover-process of large, unstructured data under the Trendicate product family for a national agency.',
+  company: 'Wayfair',
+  year: '2022',
+  description: 'Lead a 200-engineering initiative to improve cloud-native application infrastructure, increasing developer satisfaction and productivity with piercable abstractions.',
+}, {
+  company: 'Citibank',
+  year: '2018',
+  description: 'Lead 3 engineering teams to adopt Agile methodologies, and deliver with increased velocity and predictability.',
 }, {
   company: 'Amazon',
   year: '2014',
   description: 'Launched Prime Same Day in US and 4 international marketplaces.',
 }, {
-  company: 'Citibank',
-  year: '2017',
-  description: 'Lead 3 engineering teams to adopt Agile methodologies, and deliver with increased velocity.',
-}, {
-  company: 'Wayfair',
-  year: '2023',
-  description: 'Lead a 200-engineering initiative to improve cloud-native application infrastructure, increasing developer satisfaction and productivity while providing piercable abstractions.',
+  company: 'NexLabs',
+  year: '2012',
+  description: 'Designed and project-managed bespoke discover-process of large, unstructured data for a national agency.',
 }]
 </script>
