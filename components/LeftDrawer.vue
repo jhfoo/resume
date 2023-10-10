@@ -13,8 +13,8 @@
     <!-- :active="link === 'outbox'"
         @click="link = 'outbox'"
         active-class="my-menu-link" -->
-    <q-list padding class="text-primary">
-      <q-item v-for="item in menu" clickable v-ripple>
+    <q-list padding class="">
+      <q-item v-for="item in menu" :to="item.url" clickable v-ripple>
         <q-item-section avatar>
           <q-icon name="send" />
         </q-item-section>
@@ -31,10 +31,11 @@ const SiteNavigation = useNavigation()
 
 const menu = [{
   name: 'Home',
-  }, {
-    name: 'Experiences',
-  }, {
-    name: 'Connect',
-  },
-]
+  url: '/',
+}, {
+  name: 'Experiences',
+}, {
+  name: 'Connect',
+  url: '/connect',
+}]
 </script>
