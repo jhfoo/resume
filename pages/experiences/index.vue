@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-8 col-sm-16">
       <q-card-section class="">
-        <ContentDoc path="/"/>
+        <ContentDoc path="/experiences"/>
       </q-card-section>
     </div>
     <div class="col-4 gt-sm">
@@ -25,11 +25,9 @@
 </style>
 
 <script setup>
-import { useNavigation } from '@/stores/navigation'
-const SiteNavigation = useNavigation()
-
-SiteNavigation.title = 'Online Resume of Foo, Ji-Haw'
-console.log(`Title: ${SiteNavigation.title}`)
+// import { useNavigation } from '@/stores/navigation'
+// const SiteNavigation = useNavigation()
+// SiteNavigation.title = 'Online Resume of Foo, Ji-Haw'
 
 const KeyEvents = [{
   company: 'Wayfair',

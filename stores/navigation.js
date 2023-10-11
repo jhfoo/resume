@@ -3,5 +3,5 @@ import { ref } from 'vue'
 
 export const useNavigation = defineStore('navigation', () => {
   const isShowLeftDrawer = ref(true)
-  const title = ref('Hello World')
+  const title = ref('Online Resume of Foo, Ji-Haw')
 })

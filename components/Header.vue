@@ -1,10 +1,10 @@
 <template>
-  <q-header class="bg-primary text-black bg-transparent">
+  <q-header class="bg-primary text-black bg-white">
     <q-toolbar>
       <q-btn class="lt-sm" dense flat round icon="menu" @click="toggleLeftDrawer" />
 
       <q-toolbar-title>
-        {{SiteNavigation.title || '.'}}
+        {{SiteNavigation.title || 'Online Resume of Foo, Ji-Haw'}}
       </q-toolbar-title>
 
     </q-toolbar>

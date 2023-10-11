@@ -34,6 +34,7 @@ const menu = [{
   url: '/',
 }, {
   name: 'Experiences',
+  url: '/experiences',
 }, {
   name: 'Connect',
   url: '/connect',
