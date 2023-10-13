@@ -58,7 +58,7 @@
   // const DocPath = '/experiences/cloud-native'
   console.log(`DocPath: ${DocPath}`)
   let sidebar = ref([])
-  const doc = await queryContent('/experiences/cloud-native').findOne()
+  const doc = await queryContent(DocPath).findOne()
 
   console.log('Doc')
   console.log(doc)

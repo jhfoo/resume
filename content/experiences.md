@@ -14,3 +14,6 @@ developers navigate new technologies and processes brought on by cloud adoption;
 as Technology Transformation. At its height I lead a 200-engineer initiative to productize
 a cloud serivces framework enabling developers more autonomy and transparency over services
 they care about (databases), while simplifying complexities of elastic compute (kubernetes).
+
+Details in
+[![](https://www.edigitalagency.com.au/wp-content/uploads/Linkedin-logo-png.png){width=80}](https://www.linkedin.com/in/foojihaw/)

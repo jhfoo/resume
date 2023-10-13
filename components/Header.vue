@@ -15,8 +15,6 @@
 import { useNavigation } from '@/stores/navigation'
 const SiteNavigation = useNavigation()
 
-console.log(`Title: ${SiteNavigation.title}`)
-
 function toggleLeftDrawer() {
   SiteNavigation.isShowDrawer = !SiteNavigation.isShowDrawer
   console.log(`isShowDrawer: ${SiteNavigation.isShowDrawer}`)

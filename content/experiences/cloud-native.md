@@ -8,6 +8,7 @@ LinkTitle3: How to explain Kubernetes in plain English
 LinkUrl3: https://enterprisersproject.com/article/2017/10/how-explain-kubernetes-plain-english
 LinkTitle4: "Return of the Monolith: Amazon Dumps Microservices for Video Monitoring"
 LinkUrl4: https://thenewstack.io/return-of-the-monolith-amazon-dumps-microservices-for-video-monitoring/
+title: Cloud Native is not for Everyone
 ---
 # Cloud Native is not<br/>for Everyone
 ## Cloud Native is Hard

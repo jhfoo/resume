@@ -14,13 +14,23 @@
         @click="link = 'outbox'"
         active-class="my-menu-link" -->
     <q-list padding class="">
-      <q-item v-for="item in menu" :to="item.url" clickable v-ripple>
-        <q-item-section avatar>
-          <q-icon name="send" />
-        </q-item-section>
+      <template v-for="item in menu">
+        <q-item  :to="item.url" clickable v-ripple>
+          <q-item-section avatar>
+            <q-icon name="send" />
+          </q-item-section>
 
-        <q-item-section>{{item.name}}</q-item-section>
-      </q-item>
+          <q-item-section>{{item.name}}</q-item-section>
+        </q-item>
+
+        <q-item v-if="item.name === 'Experiences'" v-for="item2 in docs" :to="item2.path" clickable v-ripple dense>
+          <q-item-section avatar>
+          </q-item-section>
+
+          <q-item-section><span class="q-ml-sm">{{item2.title}}</span></q-item-section>
+        </q-item>
+      </template>
+
     </q-list>
   </q-drawer>
 </template>
@@ -28,6 +38,15 @@
 <script setup>
 import { useNavigation } from '@/stores/navigation'
 const SiteNavigation = useNavigation()
+
+const docs = (await queryContent('/experiences/').find()).map((doc) => {
+  return {
+    title: doc.title,
+    path: doc._path,
+  }
+})
+console.log(docs)
+
 
 const menu = [{
   name: 'Home',
